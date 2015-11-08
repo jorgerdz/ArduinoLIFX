@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.example.jorgerdz.arduinolifx.LEDControl">
+
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Turn LED On"
+    android:id="@+id/btnOn"
+        android:layout_above="@+id/btnOff"
+        android:layout_centerHorizontal="true" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Turn LED Off"
+    android:id="@+id/btnOff"
+    android:layout_centerVertical="true"
+    android:layout_alignLeft="@+id/btnOn"
+    android:layout_alignStart="@+id/btnOn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtArduino"
+        android:layout_above="@+id/btnOn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Off"
+        android:id="@+id/btnLights"
+        android:layout_below="@+id/btnOff"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn LED On"
+        android:id="@+id/btnOn"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnOff"
+        android:layout_alignStart="@+id/btnOff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn LED Off"
+        android:id="@+id/btnOff"
+        android:layout_below="@+id/btnOn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Data"
+        android:id="@+id/txtArduino"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Off Lights"
+        android:id="@+id/btnLights"
+        android:layout_below="@+id/btnOff"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bind Lights"
+        android:id="@+id/btnBind"
+        android:layout_below="@+id/btnOn"
+        android:layout_alignLeft="@+id/btnOff"
+        android:layout_alignStart="@+id/btnOff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRed"
+        android:layout_below="@+id/txtArduino"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:background="#ffff292b" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBlue"
+        android:background="#ff2185ff"
+        android:layout_toStartOf="@+id/txtArduino"
+        android:layout_toEndOf="@+id/btnRed"
+        android:layout_alignTop="@+id/btnRed"
+        android:layout_toLeftOf="@+id/txtArduino" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnWhite"
+        android:background="#fffffbfd"
+        android:layout_toEndOf="@+id/btnBind"
+        android:layout_alignTop="@+id/btnBlue"
+        android:layout_toRightOf="@+id/btnBind" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGreen"
+        android:background="#ff03ff15"
+        android:layout_toEndOf="@+id/btnWhite"
+        android:layout_alignTop="@+id/btnWhite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnWhite" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOrange"
+        android:background="#ffffb61d"
+        android:layout_toStartOf="@+id/txtArduino"
+        android:layout_toEndOf="@+id/btnBlue"
+        android:layout_alignTop="@+id/btnBlue"
+        android:layout_toRightOf="@+id/btnBlue"
+        android:layout_alignRight="@+id/btnOn"
+        android:layout_alignEnd="@+id/btnOn" />
+
+</RelativeLayout>
